@@ -1,0 +1,95 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+}
+
+.cardd {
+  background: #111;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.heading {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.sub {
+  color: #ddd;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 0.4rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  margin-left: 0.5rem;
+}
+
+.randomize {
+  padding: 0.8rem 1.2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #ffc125;
+  color: #5e2612;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.randomize:hover {
+  background: #e6ad20;
+}
+
+.story {
+  background: #ffc125;
+  color: #5e2612;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  visibility: hidden;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+  text-align: left;
+  white-space: pre-line;
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+  
+  .sub {
+    font-size: 0.85rem;
+  }
+  
+  .cardd {
+    padding: 1.2rem;
+  }
+}
